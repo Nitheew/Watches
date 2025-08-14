@@ -1,0 +1,170 @@
+/* Reset & Base Styling */
+body, h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #F8F6F2; /* Soft Ivory background */
+  color: #333333; /* Charcoal for good readability */
+  line-height: 1.8;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Image Styling */
+img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #0D1B2A, #1B263B); /* Deep Navy gradient */
+  color: #C9A646; /* Premium Gold text */
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+}
+
+/* NAVIGATION */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #C9A646; /* Gold links */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #B76E79; /* Rose Gold underline */
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #FDF9F3; /* Pearl White text on hover */
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #FDF9F3, #EDE8E0); /* Pearl white and light taupe */
+  text-align: center;
+  padding: 3.5rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #0D1B2A; /* Navy title */
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* PRODUCT SECTION */
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 3rem 1rem;
+}
+
+.products article {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  border-radius: 14px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.products article:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+}
+
+.products img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.products h3 {
+  margin-top: 1rem;
+  color: #5D1326; /* Deep Burgundy for titles */
+  font-size: 1.4rem;
+}
+
+.products p {
+  font-size: 0.95rem;
+  color: #333333; /* Charcoal text */
+  margin-top: 0.5rem;
+}
+
+/* OFFER SECTION */
+aside {
+  background: linear-gradient(45deg, #0D4C3C, #5D1326); /* Emerald + Burgundy */
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 520px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+aside h4 {
+  color: #FDF9F3; /* Pearl White title */
+}
+
+aside p {
+  color: #F5D97F; /* Soft Gold text */
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  background: #0D1B2A; /* Deep Navy */
+  color: #BFA6A0; /* Warm Taupe */
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
